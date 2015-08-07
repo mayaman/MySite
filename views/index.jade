@@ -1,0 +1,149 @@
+extends layout
+block content
+  nav#mainNav.navbar.navbar-default.navbar-fixed-top
+    .container-fluid
+      // Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand.page-scroll(href='#page-top')
+      // Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li
+            a.page-scroll(href='#') home
+          li
+            a.page-scroll(href='#about') about
+          li
+            a.page-scroll(href='#portfolio') portfolio
+          li
+            a.page-scroll(href='#contact') contact
+      // /.navbar-collapse
+    // /.container-fluid
+  header
+    .header-content
+      .header-content-inner
+        h1 Maya Man
+        hr
+        p
+          | Tech // Art // Activism
+        .bg-btn
+          a.btn.btn-primary.btn-xl.page-scroll(onclick='s4()') ♫
+          a.btn.btn-primary.btn-xl.page-scroll(onclick='s1()') ◼
+          a.btn.btn-primary.btn-xl.page-scroll(href='#about' onclick='home()') ▼
+          a.btn.btn-primary.btn-xl.page-scroll(onclick='s2()') ✎
+          a.btn.btn-primary.btn-xl.page-scroll(onclick='s3()') ☂
+    iframe#home-sketch-frame(frameborder='0', src='')
+    script(type='text/javascript')
+      $('#home-sketch-frame').width(window.innerWidth);
+      $('#home-sketch-frame').height(window.innerHeight);
+      $('#home-sketch-frame').css('position', 'relative');
+      $('#home-sketch-frame').css('top', '0px');
+      $('#home-sketch-frame').css('left', '0px');
+      $('#home-sketch-frame').css('z-index', '-2');
+      $('body').css('pointer-events', 'auto');
+      $('iframe').css('pointer-events', 'auto');
+      $('a').css('pointer-events', 'auto');
+  section#about.bg-primary
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          h2.section-heading about
+          hr.light
+          p.text-faded
+            | Hi there. I'm Maya. Currently studying computer science x media studies at Pomona College in Claremont, CA. I'm fascinated by the intersection of liberal arts & technology. The work I most admire integrates thoughtful development and impeccable design which is why I aim to master both.
+          //p.text-faded As I continue to become more involved in the tech world, I will continue to advocate 
+          p.text-faded My passions are broad and my curiosity insatiable.
+          p.text-faded "You'll never change the world by trying to be like it."
+          br
+          a.btn.btn-default.btn-xl(href='resume' target='_blank') resume
+  section#portfolio.no-padding
+    .container-fluid
+      .row.no-gutter
+        .portfolio-item
+          .col-lg-6.col-sm-6
+            a.portfolio-box(href='http://www.chellaman.com')
+              img.img-responsive(src='images/chellaman.png', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category
+                    //| Web Design & Development
+                  .project-name
+                    //| Chella Man Art
+          .col-lg-6.col-sm-6
+            .portfolio-box.portfolio-text.text-faded
+              br
+              h1 Chella Man Art
+              br
+              p Chella Man is a 16 year old deaf artist. On her site you can find images of her work in various mediums and a form to complete in order to purchase an item from her clothing line, Chella Man Apparel. 
+              p skills: node.js, HTML, CSS, JavaScript, design
+        .portfolio-item
+          .col-lg-6.col-sm-6
+            a.portfolio-box(href='http://www.jacklally.co')
+              img.img-responsive(src='images/jacklally.png', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category
+                    //| Web Design & Development
+                  .project-name
+                    //| Chella Man Art
+          .col-lg-6.col-sm-6
+            .portfolio-box.portfolio-text.text-faded
+              br
+              h1 Jack Lally Photography
+              br
+              p Jack Lally is a surfer/film photographer based in New York City. His site features selected shots captured from his explorations in NYC, Costa Rica, Fire Island, California, and more. 
+              p skills: node.js, HTML, CSS, JavaScript, design
+        .portfolio-item
+          .col-lg-6.col-sm-6
+            a.portfolio-box(href='/jam')
+              img.img-responsive(src='images/houseofblues.png', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category
+                    //| Web Design & Development
+                  .project-name
+                    //| Chella Man Art
+          .col-lg-6.col-sm-6
+            .portfolio-box.portfolio-text.text-faded
+              h1 House of Blues
+              br
+              p Inspired by a house down the street, House of Blues listens to the amplitude and frequencies within the song "Pick up the Pieces" by Average White Band and brings the jazz to life through color and movement. 
+              p skills: Music Visualization, p5.js, p5.js Sound Library, JavaScript
+  section#contact
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          h2.section-heading get in touch
+          hr.primary
+        //.col-lg-4.col-lg-offset-2.text-center
+          //i.fa.fa-phone.fa-3x.wow.bounceIn
+          //p 123-456-6789
+        .col-lg-8.col-lg-offset-2.text-center
+          p
+            a.mailto(href='mailto:mayaman26@gmail.com')
+              i.fa.fa-envelope-o.fa-3x.wow.bounceIn(data-wow-delay='.1s')
+        .connect.col-lg-12.text-center
+          a(href='https://instagram.com/mayamanxx/')
+            img(src='images/instagram.png', alt='')
+          a(href='https://github.com/mayaman26')
+            img(src='images/github.png', alt='')
+          a(href='https://www.linkedin.com/in/mayaman')
+            img(src='images/linkedin.png', alt='')
+          a(href='https://twitter.com/mayamanxx')
+            img(src='images/twitter.png', alt='')
+  // jQuery
+  script(src='js/jquery.js')
+  // Bootstrap Core JavaScript
+  script(src='js/bootstrap.min.js')
+  // Plugin JavaScript
+  script(src='js/jquery.easing.min.js')
+  script(src='js/jquery.fittext.js')
+  script(src='js/wow.min.js')
+  // Custom Theme JavaScript
+  script(src='js/creative.js')
+
+
