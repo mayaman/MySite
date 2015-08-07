@@ -60,6 +60,7 @@ function s1() {
 function s2() {
     $('#home-sketch-frame').attr('src', '/draw');
     $('body').css('pointer-events', 'none');
+    $('section').css('pointer-events', 'auto');
 }
 
 function s3() {
