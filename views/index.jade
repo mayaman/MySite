@@ -40,7 +40,7 @@ block content
     script(type='text/javascript')
       $('#home-sketch-frame').width(window.innerWidth);
       $('#home-sketch-frame').height(window.innerHeight);
-      $('#home-sketch-frame').css('position', 'relative');
+      $('#home-sketch-frame').css('position', 'absolute');
       $('#home-sketch-frame').css('top', '0px');
       $('#home-sketch-frame').css('left', '0px');
       $('#home-sketch-frame').css('z-index', '-2');
@@ -76,7 +76,6 @@ block content
                     //| Chella Man Art
           .col-lg-6.col-sm-6
             .portfolio-box.portfolio-text.text-faded
-              br
               h1 Jack Lally Photography
               br
               p Jack Lally is a surfer/film photographer based in New York City. His site features selected shots captured from his explorations in NYC, Costa Rica, Fire Island, California, and more. 
@@ -93,7 +92,6 @@ block content
                     //| Chella Man Art
           .col-lg-6.col-sm-6
             .portfolio-box.portfolio-text.text-faded
-              br
               h1 Chella Man Art
               br
               p Chella Man is a 16 year old deaf artist. On her site you can find images of her work in various mediums and a form to complete in order to purchase an item from her clothing line, Chella Man Apparel. 
@@ -110,7 +108,6 @@ block content
                     //| Chella Man Art
           .col-lg-6.col-sm-6
             .portfolio-box.portfolio-text.text-faded
-              br
               h1 House of Blues
               br
               p Inspired by a house down the street, House of Blues listens to the amplitude and frequencies within the song "Pick up the Pieces" by Average White Band and brings the jazz to life through color and movement. 
@@ -137,8 +134,9 @@ block content
             img(src='images/twitter.png', alt='')
           a(href='https://github.com/mayaman')
             img(src='images/github.png', alt='')
-  //footer 
-    //p site built & designed by Maya Man
+  footer 
+    p site built and designed by 
+      a(href="#") Maya Man
   // jQuery
   script(src='js/jquery.js')
   // Bootstrap Core JavaScript
