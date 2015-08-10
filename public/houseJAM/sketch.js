@@ -104,16 +104,16 @@ function draw() {
   //curve(5, 300, width - 7*width/8, height - 7*height/8, width - 7*width/8, height, 100, 100);
   //rectMode(CORNER);
 
-  var window1 = new Window(300, 150);
+  var window1 = new Window(200, 150);
   window1.display();
 
-  var window2 = new Window(300, 250 + winWidth);
+  var window2 = new Window(200, 250 + winWidth);
   window2.display();
 
-  var window3 = new Window(width - 300 - winWidth, 150);
+  var window3 = new Window(width - 200 - winWidth, 150);
   window3.display();
 
-  var window4 = new Window(width - 300 - winWidth, 250 + winWidth);
+  var window4 = new Window(width - 200 - winWidth, 250 + winWidth);
   window4.display();
 
   // if (q > 50) {
