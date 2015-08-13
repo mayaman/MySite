@@ -31,11 +31,11 @@ block content
         p
           | Tech // Art // Activism
         .bg-btn
-          a.btn.btn-primary.btn-xl.page-scroll(onclick='s4()') ♫
-          a.btn.btn-primary.btn-xl.page-scroll(onclick='s1()') ◼
+          a.btn.btn-primary.btn-xl.page-scroll.mobile-no-show(onclick='s4()') ♫
+          a.btn.btn-primary.btn-xl.page-scroll.mobile-no-show(onclick='s1()') ◼
           a.btn.btn-primary.btn-xl.page-scroll(href='#about' onclick='home()') ▼
-          a.btn.btn-primary.btn-xl.page-scroll(onclick='s2()') ✎
-          a.btn.btn-primary.btn-xl.page-scroll(onclick='s3()') ☂
+          a.btn.btn-primary.btn-xl.page-scroll.mobile-no-show(onclick='s2()') ✎
+          a.btn.btn-primary.btn-xl.page-scroll.mobile-no-show(onclick='s3()') ☂
     iframe#home-sketch-frame(frameborder='0', src='')
     script(type='text/javascript')
       $('#home-sketch-frame').width(window.innerWidth);
@@ -82,6 +82,24 @@ block content
               p skills: node.js, HTML, CSS, JavaScript, design
         .portfolio-item
           .col-lg-6.col-sm-6
+            a.portfolio-box(href='https://vimeo.com/136117725')
+              img.img-responsive(src='images/darkmatter.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category
+                    //| Web Design & Development
+                  .project-name
+                    //| Chella Man Art
+          .col-lg-6.col-sm-6
+            .portfolio-box.portfolio-text.text-faded
+              h1 Dark Matter
+              br
+              p A collaboration with my sister, 
+                a(href='http://chellaman.com') Chella Man
+                , this multi media project demonstrates the uncanny effect paint x movement can have when integrated in the natural world. Here, I choreographed, danced, and edited the footage to create this piece. 
+              p skills: dance, choreography, video editing 
+        .portfolio-item
+          .col-lg-6.col-sm-6
             a.portfolio-box(href='http://www.chellaman.com' target='_blank')
               img.img-responsive(src='images/chellaman.png', alt='')
               .portfolio-box-caption
@@ -96,7 +114,7 @@ block content
               br
               p Chella Man is a 16 year old deaf artist. On her site you can find images of her work in various mediums and a form to complete in order to purchase an item from her clothing line, Chella Man Apparel. 
               p skills: node.js, HTML, CSS, JavaScript, design
-        .portfolio-item
+        .portfolio-item.mobile-no-show
           .col-lg-6.col-sm-6
             a.portfolio-box(href='/jam')
               img.img-responsive(src='images/houseofblues.png', alt='')
