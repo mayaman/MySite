@@ -552,7 +552,8 @@ fieldset[disabled] .btn-primary.active {
     font-size: 2em;
     z-index: -1;
     margin: 0;
-    opacity: .5;
+   opacity: .8;
+    color: #9ECEEB;
 }
 
 .connect img {
